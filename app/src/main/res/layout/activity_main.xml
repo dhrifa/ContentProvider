@@ -8,22 +8,21 @@
 
     <Button
         android:id="@+id/button_display_all"
-        android:text="List all words"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="24dp"
+        android:onClick="onClickDisplayEntries"
+        android:text="List all words"
         app:layout_constraintEnd_toStartOf="@id/button_display_first"
-        android:onClick="onClickDisplayEntries" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <Button
         android:id="@+id/button_display_first"
         android:text="List first word"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="@id/button_display_all"
         app:layout_constraintStart_toEndOf="@id/button_display_all"
         app:layout_constraintEnd_toEndOf="parent"
         android:onClick="onClickDisplayEntries" />
